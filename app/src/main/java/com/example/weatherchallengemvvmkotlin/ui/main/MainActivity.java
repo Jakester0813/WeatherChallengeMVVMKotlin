@@ -1,8 +1,10 @@
-package com.example.weatherchallengemvvmkotlin;
+package com.example.weatherchallengemvvmkotlin.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.weatherchallengemvvmkotlin.R;
 
 public class MainActivity extends AppCompatActivity {
 
