@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
+import io.reactivex.disposables.CompositeDisposable;
 import timber.log.Timber;
 
 public abstract class BaseViewModel extends AndroidViewModel {
@@ -20,6 +22,7 @@ public abstract class BaseViewModel extends AndroidViewModel {
     protected MutableLiveData<ArrayList<Throwable>> errors = new MutableLiveData<>(new ArrayList<>());
     protected HashMap<String, MutableLiveData<Boolean>> loadingElements = new HashMap<>();
     protected HashMap<String, Boolean> loadingElementsBackstore = new HashMap<>();
+    protected CompositeDisposable disposables = new CompositeDisposable();
 
     public BaseViewModel(@NonNull Application application) {
         super(application);
