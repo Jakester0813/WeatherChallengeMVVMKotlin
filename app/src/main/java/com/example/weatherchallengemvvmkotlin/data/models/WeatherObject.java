@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -16,19 +16,19 @@ public class WeatherObject {
     @SerializedName("icon")
     String icon;
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public String getMain(){
+    public String getMain() {
         return main;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return description;
     }
 
-    public String getIcon(){
+    public String getIcon() {
         return icon;
     }
 }

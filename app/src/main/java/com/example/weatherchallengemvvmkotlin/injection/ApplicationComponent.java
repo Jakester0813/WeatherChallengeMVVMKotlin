@@ -1,7 +1,7 @@
 package com.example.weatherchallengemvvmkotlin.injection;
 
-import android.app.Application;
-
+import com.example.weatherchallengemvvmkotlin.WeatherMVVMKotlinApplication;
+import com.example.weatherchallengemvvmkotlin.data.network.WeatherNetworkService;
 import com.example.weatherchallengemvvmkotlin.ui.main.MainActivity;
 import com.example.weatherchallengemvvmkotlin.ui.main.MainActivityViewModel;
 
@@ -12,8 +12,11 @@ import dagger.Component;
 @Singleton
 @Component(modules = {ApplicationModule.class})
 public interface ApplicationComponent extends CoreComponent {
-    void inject(Application obj);
+    void inject(WeatherMVVMKotlinApplication obj);
 
     void inject(MainActivity obj);
+
     void inject(MainActivityViewModel obj);
+
+    void inject(WeatherNetworkService obj);
 }

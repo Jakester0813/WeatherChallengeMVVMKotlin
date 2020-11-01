@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -25,27 +25,31 @@ public class MainObject {
     @SerializedName("grnd_level")
     double groundLevel;
 
-    public double getTemp(){
+    public double getTemp() {
         return temp;
     }
 
-    public double getPressure(){
+    public double getPressure() {
         return pressure;
     }
 
-    public long getHumidity(){
+    public long getHumidity() {
         return humidity;
     }
 
-    public double getTempMin(){ return tempMin; }
+    public double getTempMin() {
+        return tempMin;
+    }
 
-    public double getTempMax(){ return tempMax; }
+    public double getTempMax() {
+        return tempMax;
+    }
 
-    public double getSeaLevel(){
+    public double getSeaLevel() {
         return seaLevel;
     }
 
-    public double getGroundLevel(){
+    public double getGroundLevel() {
         return groundLevel;
     }
 

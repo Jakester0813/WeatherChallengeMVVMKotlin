@@ -2,7 +2,9 @@ package com.example.weatherchallengemvvmkotlin.injection;
 
 import android.content.Context;
 
-import com.example.weatherchallengemvvmkotlin.network.WeatherClient;
+import com.example.weatherchallengemvvmkotlin.data.network.WeatherClient;
+import com.example.weatherchallengemvvmkotlin.data.network.WeatherNetworkService;
+import com.example.weatherchallengemvvmkotlin.data.network.WeatherService;
 
 import javax.inject.Singleton;
 
@@ -25,9 +27,10 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    public WeatherClient providesRestClient() {
-        WeatherClient restClient = new WeatherClient();
-//        activityComponent.inject(restClient);
+    public WeatherNetworkService providesRestClient() {
+        WeatherClient client = new WeatherClient();
+        WeatherNetworkService restClient = new WeatherNetworkService(client.getRetrofit().create(WeatherService.class));
+        activityComponent.inject(restClient);
         return restClient;
     }
 }

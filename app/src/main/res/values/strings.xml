@@ -2,6 +2,9 @@
     <string name="app_name">WeatherApplicationChallenge</string>
     <string name="input_hint">Enter your location as city or a 5 digit zip code</string>
     <string name="loading_text">Loading up weather data. Please wait...</string>
+    <string name="todays_weather">Today\'s Weather in %s</string>
+    <string name="temperature">%s°F</string>
+    <string name="minMax">%s°F/%s°F</string>
 
     <!--error-->
     <string name="location_not_found">Location not found. Maybe put the name of city or your zipcode?</string>

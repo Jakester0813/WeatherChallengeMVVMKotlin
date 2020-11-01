@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -39,47 +39,47 @@ public class WeatherResponse {
     @SerializedName("cod")
     int code;
 
-    public CoordinateObject getCoord(){
+    public CoordinateObject getCoord() {
         return coord;
     }
 
-    public ArrayList<WeatherObject> getWeatherObjects(){
+    public ArrayList<WeatherObject> getWeatherObjects() {
         return weatherObjs;
     }
 
-    public String getBase(){
+    public String getBase() {
         return base;
     }
 
-    public MainObject getMain(){
+    public MainObject getMain() {
         return main;
     }
 
-    public WindObject getWind(){
+    public WindObject getWind() {
         return wind;
     }
 
-    public CloudObject getCloud(){
+    public CloudObject getCloud() {
         return cloud;
     }
 
-    public long getDt(){
+    public long getDt() {
         return dt;
     }
 
-    public SysObject getSysObject(){
+    public SysObject getSysObject() {
         return mSysObject;
     }
 
-    public long getId(){
+    public long getId() {
         return id;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public int getCode(){
+    public int getCode() {
         return code;
     }
 }

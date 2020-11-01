@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -16,19 +16,19 @@ public class SysObject {
     @SerializedName("sunset")
     long sunset;
 
-    public double getMessage(){
+    public double getMessage() {
         return message;
     }
 
-    public String getCountry(){
+    public String getCountry() {
         return country;
     }
 
-    public long getSunrise(){
+    public long getSunrise() {
         return sunrise;
     }
 
-    public long getSunset(){
+    public long getSunset() {
         return sunset;
     }
 }

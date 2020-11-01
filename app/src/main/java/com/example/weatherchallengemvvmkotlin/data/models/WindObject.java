@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -10,11 +10,11 @@ public class WindObject {
     @SerializedName("deg")
     double deg;
 
-    public double getSpeed(){
+    public double getSpeed() {
         return speed;
     }
 
-    public double getDeg(){
+    public double getDeg() {
         return deg;
     }
 

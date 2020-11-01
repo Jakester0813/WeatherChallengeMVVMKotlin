@@ -1,4 +1,4 @@
-package com.example.weatherchallengemvvmkotlin.models;
+package com.example.weatherchallengemvvmkotlin.data.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -10,11 +10,11 @@ public class CoordinateObject {
     @SerializedName("lat")
     double lat;
 
-    public double getLon(){
+    public double getLon() {
         return lon;
     }
 
-    public double getLat(){
+    public double getLat() {
         return lat;
     }
 
