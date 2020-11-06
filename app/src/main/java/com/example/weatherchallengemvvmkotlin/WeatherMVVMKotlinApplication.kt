@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.example.weatherchallengemvvmkotlin.injection.ApplicationComponent
 import com.example.weatherchallengemvvmkotlin.injection.ApplicationModule
 import com.example.weatherchallengemvvmkotlin.injection.ComponentObject
-import com.example.weatherchallengemvvmkotlin.injection.DaggerApplicationComponent
 import timber.log.Timber
 
 class WeatherMVVMKotlinApplication: Application(), Application.ActivityLifecycleCallbacks, ComponentObject<ApplicationComponent?> {

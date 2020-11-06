@@ -18,7 +18,7 @@ class WeatherData {
         fun from(response: WeatherResponse?, context: Context, errorThrown: Boolean): WeatherData {
             val data = WeatherData ()
             data.isErrorThrown = errorThrown;
-            if(response != null) {
+            response?.let {
                 data.location = String.format(context.getString(R.string.todays_weather), response.name)
                 data.temperature = String.format(context.getString(R.string.todays_weather), response.name)
                 data.imageUrl = response.weatherObjList?.get(0)?.icon
