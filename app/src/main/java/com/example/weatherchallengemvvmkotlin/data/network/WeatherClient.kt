@@ -26,6 +26,7 @@ class WeatherClient @Inject constructor(): OkHttpClient() {
                 .baseUrl(WeatherConstants.DOMAIN)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(client)
                 .build()
     }
 }
